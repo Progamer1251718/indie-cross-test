@@ -1,0 +1,114 @@
+#slimButtons{margin-bottom:0px}
+#slimButtons>.btn-group{top:15px}
+.entries:hover{text-decoration: none}
+#backButtonFormGroup{margin:0px}
+#personCaption,#actsCaption,#looksCaption{position: relative;top: 77px;}
+#looksCaption{left:75px}
+#personCaption{  left: 155px;}
+#actsCaption{    left: 230px;}
+#actsAnim,#looksAnim{padding-top: 12px;margin: 0px;}
+#actsPic,#looksPic{height:135px;margin: 10px 10px 0px 0px;}
+.sub{display:none;height: 22px}
+container:nth-child(3)>.row{align: center;color: red;padding:10px;}
+.row>span{align-content: center;color: red;padding:10px;margin-bottom:10px}
+.righty{position:absolute;right:20px}
+footer{background-color:#ffAA0A}
+.sub>.carousel-inner{height:165px}
+#pixCarousel>.carousel-inner{width:73%}
+/*.glyphicon-chevron-left{position: absolute;bottom:20px;left:88px}*/
+#leftChev{position: absolute;top:342px;left:76px;width: 40px;height:100px}
+/*.glyphicon-chevron-right{position: absolute;bottom:20px;right:88px}*/
+#rightChev{  height: 100px;    top: 342px !important ;    width: 40px;right:26px}
+.form-group.nth-child(1)>input{font-style: italic;}
+#header{background: black}
+#appTitle>span{font-size:90px}
+#buttonGroup button{white-space:normal;font: message-box;padding:2px;}
+#buttonGroup .label{
+      background-position: center;
+        width: 85px;
+        animation: backanimalchange 5s !important; /* animation-name followed by duration in seconds*/
+        animation-iteration-count: 500 !important;
+           /* you could also use milliseconds (ms) or something like 2.5s */
+
+        -webkit-animation: backanimalchange 5s !important; /* Chrome and Safari */
+         -webkit-animation-iteration-count:500 !important;
+
+        }
+        @keyframes backanimalchange{
+        0%{
+        background-image: url("../img/afghan_hound.png");}
+        25%{
+        background-image: url("../img/alberto.png");}
+        50%{
+        background-image: url("../img/ayeaye.png");}
+        75%{
+        background-image: url("../img/baboon.png");}
+        100%{background-image: url("../img/barn_owl.png");}
+        }
+        @-webkit-keyframes backanimalchange{
+        0%{
+        background-image: url("../img/afghan_hound.png");}
+        25%{
+        background-image: url("../img/alberto.png");}
+        50%{
+        background-image: url("../img/ayeaye.png");}
+        75%{
+        background-image: url("../img/baboon.png");}
+        100%{background-image: url("../img/barn_owl.png");}
+
+        }
+      }
+.carousel-inner .active.left {         left: -25%;}
+.carousel-inner .active.right {  left: 25%;}
+.carousel-inner .next {  left: 25%;}
+.carousel-inner .prev {  left: -25%;}
+.moreInfo{display:none}
+.moreInfoSwitch{position:absolute;top:120px;height:80px;left:1em}
+a.less{font-size:.5em;}
+.media.entries{height: 205px;}
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+.stay{position:absolute;left:160px;background-image:url('');background-position:center;z-index:-1}
+.two,.three,.stay{height:110px;width:110px;padding:0px}
+
+.two{ position:absolute;left:50px;background-image:url('');background-position:50% 40%;opacity:0.6;
+    animation-name: shifttwo;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+    animation-timing-function: linear;
+/*   animation-direction:alternate; */
+  }
+@keyframes shifttwo {
+      0%   {left: 50px;opacity:1}
+   /*  13% {left:100px} */
+    25%  {left: 105px;opacity:.6}
+   /*  38%  {left:0px} */
+    50%  {left: 160px;opacity:.5}
+  /*   63%  {left:88px} */
+    75% {left:105pxopacity:.6}
+  /*   87% {left: 120px} */
+    100% {left: 50px;opacity:1}
+}
+.three{ position:absolute;left:270px;background-image:url('');background-position:35% 30%;opacity:.6;
+    animation-name: shiftthree;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+     animation-timing-function: linear;
+     animation-delay: 2.5s;
+    /*  animation-direction:alternate; */
+  }
+@keyframes shiftthree {
+    0%   {left: 270px;opacity:1}
+   /*  13% {left:100px} */
+    25%  {left: 210px;opacity:.6}
+   /*  38%  {left:0px} */
+    50%  {left: 160px;opacity:.5}
+  /*   63%  {left:88px} */
+    75% {left:210px;opacity:.6}
+  /*   87% {left: 120px} */
+    100% {left: 270px;opacity:1}
+}
+#play{position:absolute;top: 90px;left:-4px}
+#pause:first-of-type{position:absolute;top:90px;left:-10px;z-index:1}
+#repeat{position:absolute;top:120px;left:-14px}
+a.entries>img{height:125px;width:125px}
+;

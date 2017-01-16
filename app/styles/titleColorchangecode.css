@@ -1,0 +1,1293 @@
+    #s9 {
+      color:red;
+      animation: colorchange1 5.45s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+
+      -webkit-animation: colorchange1 5.45s; /* Chrome and Safari */
+       -webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes colorchange1
+    {
+      {color: #ff3346;}
+      3%
+       {color: #ff339e;}
+      7%
+      {color: #ff33f4;}
+      10%
+       {color: #c633ff;}
+      14%
+       {color: #8c33ff;}
+      17%
+       {color: #5e33ff;}
+      21%
+       {color: #333cff;}
+      24%
+      {color: #3361ff ;}
+      28%
+        {color: #3392ff;}
+      31%
+       {color: #33bdff;}
+      35%
+       {color: #33d6ff ;}
+      38%
+       {color: #33f4ff;}
+      42%
+       {color: #33ffe5 ;}
+      45%
+        {color: #33ff9e ;}
+      49%
+       {color: #33ff5e ;}
+      52%
+       {color: #6aff33 ;}
+      56%
+       {color: #9bff33 ;}
+      59%
+       {color: #c0ff33 ;}
+      63%
+        {color: #dfff33 ;}
+      66%
+       {color: #faff33 ;}
+      70%
+       {color: #ffee33 ;}
+      74%
+       {color: #ffd333 ;}
+      78%
+       {color: #ffb433 ;}
+      84%
+        {color: #ff9533 ;}
+      89%
+       {color: #ff7633;}
+      96%
+       {color: #ff5233 ;}
+      100%
+       {color: #ff3933 ;}
+    }
+
+    @-webkit-keyframes colorchange1 /* Safari and Chrome - necessary duplicate */
+    {
+      0%
+      {color: #ff3346;}
+      3%
+       {color: #ff339e;}
+      7%
+      {color: #ff33f4;}
+      10%
+       {color: #c633ff;}
+      14%
+       {color: #8c33ff;}
+      17%
+       {color: #5e33ff;}
+      21%
+       {color: #333cff;}
+      24%
+      {color: #3361ff ;}
+      28%
+        {color: #3392ff;}
+      31%
+       {color: #33bdff;}
+      35%
+       {color: #33d6ff ;}
+      38%
+       {color: #33f4ff;}
+      42%
+       {color: #33ffe5 ;}
+      45%
+        {color: #33ff9e ;}
+      49%
+       {color: #33ff5e ;}
+      52%
+       {color: #6aff33 ;}
+      56%
+       {color: #9bff33 ;}
+      59%
+       {color: #c0ff33 ;}
+      63%
+        {color: #dfff33 ;}
+      66%
+       {color: #faff33 ;}
+      70%
+       {color: #ffee33 ;}
+      74%
+       {color: #ffd333 ;}
+      78%
+       {color: #ffb433 ;}
+      84%
+        {color: #ff9533 ;}
+      89%
+       {color: #ff7633;}
+      96%
+       {color: #ff5233 ;}
+      100%
+       {color: #ff3933 ;}
+    }
+
+    #s8 {
+      color:red;
+      animation: colorchange2 5.45s ; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+
+      -webkit-animation: colorchange2 5.45s ; /* Chrome and Safari */
+       -webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes colorchange2
+    {
+      0%
+       {color: #ff339e;}
+      3%
+      {color: #ff33f4;}
+      7%
+       {color: #c633ff;}
+      10%
+       {color: #8c33ff;}
+      14%
+       {color: #5e33ff;}
+      17%
+       {color: #333cff;}
+      21%
+      {color: #3361ff ;}
+      24%
+        {color: #3392ff;}
+      28%
+       {color: #33bdff;}
+      31%
+       {color: #33d6ff ;}
+      35%
+       {color: #33f4ff;}
+      38%
+       {color: #33ffe5 ;}
+      42%
+        {color: #33ff9e ;}
+      45%
+       {color: #33ff5e ;}
+      49%
+       {color: #6aff33 ;}
+      52%
+       {color: #9bff33 ;}
+      56%
+       {color: #c0ff33 ;}
+      59%
+        {color: #dfff33 ;}
+      63%
+       {color: #faff33 ;}
+      66%
+       {color: #ffee33 ;}
+      70%
+       {color: #ffd333 ;}
+      74%
+       {color: #ffb433 ;}
+      78%
+        {color: #ff9533 ;}
+      84%
+       {color: #ff7633;}
+      89%
+       {color: #ff5233 ;}
+      96%
+        {color: #ff3933 ;}
+      100%
+        {color: #ff3346;}
+
+
+      100% {color: red;}
+    }
+
+    @-webkit-keyframes colorchange2 /* Safari and Chrome - necessary duplicate */
+    {
+
+      0%
+       {color: #ff339e;}
+      3%
+      {color: #ff33f4;}
+      7%
+       {color: #c633ff;}
+      10%
+       {color: #8c33ff;}
+      14%
+       {color: #5e33ff;}
+      17%
+       {color: #333cff;}
+      21%
+      {color: #3361ff ;}
+      24%
+        {color: #3392ff;}
+      28%
+       {color: #33bdff;}
+      31%
+       {color: #33d6ff ;}
+      35%
+       {color: #33f4ff;}
+      38%
+       {color: #33ffe5 ;}
+      42%
+        {color: #33ff9e ;}
+      45%
+       {color: #33ff5e ;}
+      49%
+       {color: #6aff33 ;}
+      52%
+       {color: #9bff33 ;}
+      56%
+       {color: #c0ff33 ;}
+      59%
+        {color: #dfff33 ;}
+      63%
+       {color: #faff33 ;}
+      66%
+       {color: #ffee33 ;}
+      70%
+       {color: #ffd333 ;}
+      74%
+       {color: #ffb433 ;}
+      78%
+        {color: #ff9533 ;}
+      84%
+       {color: #ff7633;}
+      89%
+       {color: #ff5233 ;}
+      96%
+        {color: #ff3933 ;}
+      100%
+        {color: #ff3346;}
+
+
+    }
+
+
+    #s7 {
+      color:red;
+      animation: colorchange3 5.45s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+
+      -webkit-animation: colorchange3 5.45s; /* Chrome and Safari */
+       -webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes colorchange3
+    {
+      0%
+      {color: #ff33f4;}
+      3%
+       {color: #c633ff;}
+      7%
+       {color: #8c33ff;}
+      10%
+       {color: #5e33ff;}
+      14%
+       {color: #333cff;}
+      17%
+      {color: #3361ff ;}
+      21%
+        {color: #3392ff;}
+      24%
+       {color: #33bdff;}
+      27%
+       {color: #33d6ff ;}
+      31%
+       {color: #33f4ff;}
+      35%
+       {color: #33ffe5 ;}
+      38%
+        {color: #33ff9e ;}
+      42%
+       {color: #33ff5e ;}
+      45%
+       {color: #6aff33 ;}
+      49%
+       {color: #9bff33 ;}
+      52%
+       {color: #c0ff33 ;}
+      56%
+        {color: #dfff33 ;}
+      59%
+       {color: #faff33 ;}
+      63%
+       {color: #ffee33 ;}
+      66%
+       {color: #ffd333 ;}
+      70%
+       {color: #ffb433 ;}
+      74%
+        {color: #ff9533 ;}
+      78%
+       {color: #ff7633;}
+      84%
+       {color: #ff5233 ;}
+      89%
+        {color: #ff3933 ;}
+      96%
+      {color: #ff3346;}
+      100%
+       {color: #ff339e;}
+
+    }
+
+    @-webkit-keyframes colorchange3 /* Safari and Chrome - necessary duplicate */
+    {
+
+      0%
+      {color: #ff33f4;}
+      3%
+       {color: #c633ff;}
+      7%
+       {color: #8c33ff;}
+      10%
+       {color: #5e33ff;}
+      14%
+       {color: #333cff;}
+      17%
+      {color: #3361ff ;}
+      21%
+        {color: #3392ff;}
+      24%
+       {color: #33bdff;}
+      27%
+       {color: #33d6ff ;}
+      31%
+       {color: #33f4ff;}
+      35%
+       {color: #33ffe5 ;}
+      38%
+        {color: #33ff9e ;}
+      42%
+       {color: #33ff5e ;}
+      45%
+       {color: #6aff33 ;}
+      49%
+       {color: #9bff33 ;}
+      52%
+       {color: #c0ff33 ;}
+      56%
+        {color: #dfff33 ;}
+      59%
+       {color: #faff33 ;}
+      63%
+       {color: #ffee33 ;}
+      66%
+       {color: #ffd333 ;}
+      70%
+       {color: #ffb433 ;}
+      74%
+        {color: #ff9533 ;}
+      78%
+       {color: #ff7633;}
+      84%
+       {color: #ff5233 ;}
+      89%
+        {color: #ff3933 ;}
+      96%
+      {color: #ff3346;}
+      100%
+       {color: #ff339e;}
+
+
+    }
+
+
+    #s6 {
+      color:red;
+      animation: colorchange4 5.45s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+
+      -webkit-animation: colorchange4 5.45s; /* Chrome and Safari */
+       -webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes colorchange4
+    {
+      0%
+       {color: #c633ff;}
+      3%
+       {color: #8c33ff;}
+      7%
+       {color: #5e33ff;}
+      10%
+       {color: #333cff;}
+      14%
+      {color: #3361ff ;}
+      17%
+        {color: #3392ff;}
+      21%
+       {color: #33bdff;}
+      24%
+       {color: #33d6ff ;}
+      28%
+       {color: #33f4ff;}
+      31%
+       {color: #33ffe5 ;}
+      35%
+        {color: #33ff9e ;}
+      38%
+       {color: #33ff5e ;}
+      42%
+       {color: #6aff33 ;}
+      45%
+       {color: #9bff33 ;}
+      49%
+       {color: #c0ff33 ;}
+      52%
+        {color: #dfff33 ;}
+      56%
+       {color: #faff33 ;}
+      59%
+       {color: #ffee33 ;}
+      63%
+       {color: #ffd333 ;}
+      66%
+       {color: #ffb433 ;}
+      70%
+        {color: #ff9533 ;}
+      74%
+       {color: #ff7633;}
+      78%
+       {color: #ff5233 ;}
+      84%
+        {color: #ff3933 ;}
+      89%
+      {color: #ff3346;}
+      95%
+       {color: #ff339e;}
+      100%
+      {color: #ff33f4;}
+
+    }
+
+    @-webkit-keyframes colorchange4 /* Safari and Chrome - necessary duplicate */
+    {
+
+      0%
+       {color: #c633ff;}
+      3%
+       {color: #8c33ff;}
+      7%
+       {color: #5e33ff;}
+      10%
+       {color: #333cff;}
+      14%
+      {color: #3361ff ;}
+      17%
+        {color: #3392ff;}
+      21%
+       {color: #33bdff;}
+      24%
+       {color: #33d6ff ;}
+      28%
+       {color: #33f4ff;}
+      31%
+       {color: #33ffe5 ;}
+      35%
+        {color: #33ff9e ;}
+      38%
+       {color: #33ff5e ;}
+      42%
+       {color: #6aff33 ;}
+      45%
+       {color: #9bff33 ;}
+      49%
+       {color: #c0ff33 ;}
+      52%
+        {color: #dfff33 ;}
+      56%
+       {color: #faff33 ;}
+      59%
+       {color: #ffee33 ;}
+      63%
+       {color: #ffd333 ;}
+      66%
+       {color: #ffb433 ;}
+      70%
+        {color: #ff9533 ;}
+      74%
+       {color: #ff7633;}
+      78%
+       {color: #ff5233 ;}
+      84%
+        {color: #ff3933 ;}
+      89%
+      {color: #ff3346;}
+      95%
+       {color: #ff339e;}
+      100%
+      {color: #ff33f4;}
+
+
+    }
+
+
+    #s5 {
+      color:red;
+      animation: colorchange5 5.45s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+
+      -webkit-animation: colorchange5 5.45s; /* Chrome and Safari */
+       -webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes colorchange5
+    {
+      0%
+       {color: #8c33ff;}
+      3%
+       {color: #5e33ff;}
+      7%
+       {color: #333cff;}
+      10%
+      {color: #3361ff ;}
+      14%
+        {color: #3392ff;}
+      17%
+       {color: #33bdff;}
+      21%
+       {color: #33d6ff ;}
+      24%
+       {color: #33f4ff;}
+      28%
+       {color: #33ffe5 ;}
+      31%
+        {color: #33ff9e ;}
+      35%
+       {color: #33ff5e ;}
+      38%
+       {color: #6aff33 ;}
+      42%
+       {color: #9bff33 ;}
+      45%
+       {color: #c0ff33 ;}
+      49%
+        {color: #dfff33 ;}
+      52%
+       {color: #faff33 ;}
+      56%
+       {color: #ffee33 ;}
+      59%
+       {color: #ffd333 ;}
+      63%
+       {color: #ffb433 ;}
+      66%
+        {color: #ff9533 ;}
+      70%
+       {color: #ff7633;}
+      74%
+       {color: #ff5233 ;}
+      78%
+        {color: #ff3933 ;}
+      84%
+      {color: #ff3346;}
+      89%
+       {color: #ff339e;}
+      95%
+      {color: #ff33f4;}
+      100%
+       {color: #c633ff;}
+
+    }
+
+    @-webkit-keyframes colorchange5 /* Safari and Chrome - necessary duplicate */
+    {
+
+      0%
+       {color: #8c33ff;}
+      3%
+       {color: #5e33ff;}
+      7%
+       {color: #333cff;}
+      10%
+      {color: #3361ff ;}
+      14%
+        {color: #3392ff;}
+      17%
+       {color: #33bdff;}
+      21%
+       {color: #33d6ff ;}
+      24%
+       {color: #33f4ff;}
+      28%
+       {color: #33ffe5 ;}
+      31%
+        {color: #33ff9e ;}
+      35%
+       {color: #33ff5e ;}
+      38%
+       {color: #6aff33 ;}
+      42%
+       {color: #9bff33 ;}
+      45%
+       {color: #c0ff33 ;}
+      49%
+        {color: #dfff33 ;}
+      52%
+       {color: #faff33 ;}
+      56%
+       {color: #ffee33 ;}
+      59%
+       {color: #ffd333 ;}
+      63%
+       {color: #ffb433 ;}
+      66%
+        {color: #ff9533 ;}
+      70%
+       {color: #ff7633;}
+      74%
+       {color: #ff5233 ;}
+      78%
+        {color: #ff3933 ;}
+      84%
+      {color: #ff3346;}
+      89%
+       {color: #ff339e;}
+      95%
+      {color: #ff33f4;}
+      100%
+       {color: #c633ff;}
+    }
+
+
+    #s4 {
+      color:red;
+      animation: colorchange6 5.45s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+
+      -webkit-animation: colorchange6 5.45s; /* Chrome and Safari */
+       -webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes colorchange6
+    {
+      0%
+       {color: #5e33ff;}
+      3%
+       {color: #333cff;}
+      7%
+      {color: #3361ff ;}
+      10%
+        {color: #3392ff;}
+      14%
+       {color: #33bdff;}
+      17%
+       {color: #33d6ff ;}
+      21%
+       {color: #33f4ff;}
+      24%
+       {color: #33ffe5 ;}
+      28%
+        {color: #33ff9e ;}
+      31%
+       {color: #33ff5e ;}
+      35%
+       {color: #6aff33 ;}
+      38%
+       {color: #9bff33 ;}
+      42%
+       {color: #c0ff33 ;}
+      45%
+        {color: #dfff33 ;}
+      49%
+       {color: #faff33 ;}
+      52%
+       {color: #ffee33 ;}
+      56%
+       {color: #ffd333 ;}
+      59%
+       {color: #ffb433 ;}
+      63%
+        {color: #ff9533 ;}
+      66%
+       {color: #ff7633;}
+      70%
+       {color: #ff5233 ;}
+      74%
+      {color: #ff3933 ;}
+      78%
+      {color: #ff3346;}
+      84%
+       {color: #ff339e;}
+      89%
+      {color: #ff33f4;}
+      95%
+       {color: #c633ff;}
+      100%
+       {color: #8c33ff;}
+    }
+
+    @-webkit-keyframes colorchange6 /* Safari and Chrome - necessary duplicate */
+    {
+
+      0%
+       {color: #5e33ff;}
+      3%
+       {color: #333cff;}
+      7%
+      {color: #3361ff ;}
+      10%
+        {color: #3392ff;}
+      14%
+       {color: #33bdff;}
+      17%
+       {color: #33d6ff ;}
+      21%
+       {color: #33f4ff;}
+      24%
+       {color: #33ffe5 ;}
+      28%
+        {color: #33ff9e ;}
+      31%
+       {color: #33ff5e ;}
+      35%
+       {color: #6aff33 ;}
+      38%
+       {color: #9bff33 ;}
+      42%
+       {color: #c0ff33 ;}
+      45%
+        {color: #dfff33 ;}
+      49%
+       {color: #faff33 ;}
+      52%
+       {color: #ffee33 ;}
+      56%
+       {color: #ffd333 ;}
+      59%
+       {color: #ffb433 ;}
+      63%
+        {color: #ff9533 ;}
+      66%
+       {color: #ff7633;}
+      70%
+       {color: #ff5233 ;}
+      74%
+      {color: #ff3933 ;}
+      78%
+      {color: #ff3346;}
+      84%
+       {color: #ff339e;}
+      89%
+      {color: #ff33f4;}
+      95%
+       {color: #c633ff;}
+      100%
+       {color: #8c33ff;}
+
+    }
+
+
+    #s3 {
+      color:red;
+      animation: colorchange7 5.45s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+
+      -webkit-animation: colorchange7 5.45s; /* Chrome and Safari */
+       -webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes colorchange7
+    {
+      0%
+       {color: #333cff;}
+      3%
+      {color: #3361ff ;}
+      7%
+        {color: #3392ff;}
+      10%
+       {color: #33bdff;}
+      14%
+       {color: #33d6ff ;}
+      17%
+       {color: #33f4ff;}
+      21%
+       {color: #33ffe5 ;}
+      24%
+        {color: #33ff9e ;}
+      28%
+       {color: #33ff5e ;}
+      31%
+       {color: #6aff33 ;}
+      35%
+       {color: #9bff33 ;}
+      38%
+       {color: #c0ff33 ;}
+      42%
+        {color: #dfff33 ;}
+      45%
+       {color: #faff33 ;}
+      49%
+       {color: #ffee33 ;}
+      52%
+       {color: #ffd333 ;}
+      56%
+       {color: #ffb433 ;}
+      59%
+        {color: #ff9533 ;}
+      63%
+       {color: #ff7633;}
+      66%
+       {color: #ff5233 ;}
+      70%
+      {color: #ff3933 ;}
+      74%
+      {color: #ff3346;}
+      78%
+       {color: #ff339e;}
+      84%
+      {color: #ff33f4;}
+      89%
+       {color: #c633ff;}
+      95%
+       {color: #8c33ff;}
+      100%
+       {color: #5e33ff;}
+
+    }
+
+    @-webkit-keyframes colorchange7 /* Safari and Chrome - necessary duplicate */
+    {
+
+      0%
+       {color: #333cff;}
+      3%
+      {color: #3361ff ;}
+      7%
+        {color: #3392ff;}
+      10%
+       {color: #33bdff;}
+      14%
+       {color: #33d6ff ;}
+      17%
+       {color: #33f4ff;}
+      21%
+       {color: #33ffe5 ;}
+      24%
+        {color: #33ff9e ;}
+      28%
+       {color: #33ff5e ;}
+      31%
+       {color: #6aff33 ;}
+      35%
+       {color: #9bff33 ;}
+      38%
+       {color: #c0ff33 ;}
+      42%
+        {color: #dfff33 ;}
+      45%
+       {color: #faff33 ;}
+      49%
+       {color: #ffee33 ;}
+      52%
+       {color: #ffd333 ;}
+      56%
+       {color: #ffb433 ;}
+      59%
+        {color: #ff9533 ;}
+      63%
+       {color: #ff7633;}
+      66%
+       {color: #ff5233 ;}
+      70%
+      {color: #ff3933 ;}
+      74%
+      {color: #ff3346;}
+      78%
+       {color: #ff339e;}
+      84%
+      {color: #ff33f4;}
+      89%
+       {color: #c633ff;}
+      95%
+       {color: #8c33ff;}
+      100%
+       {color: #5e33ff;}
+
+    }
+
+
+    #s2 {
+      color:red;
+      animation: colorchange8 5.45s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+
+      -webkit-animation: colorchange8 5.45s; /* Chrome and Safari */
+       -webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes colorchange8
+    {
+      0%
+      {color: #3361ff ;}
+      3%
+        {color: #3392ff;}
+      7%
+       {color: #33bdff;}
+      10%
+       {color: #33d6ff ;}
+      14%
+       {color: #33f4ff;}
+      17%
+       {color: #33ffe5 ;}
+      21%
+        {color: #33ff9e ;}
+      24%
+       {color: #33ff5e ;}
+      28%
+       {color: #6aff33 ;}
+      31%
+       {color: #9bff33 ;}
+      35%
+       {color: #c0ff33 ;}
+      38%
+        {color: #dfff33 ;}
+      42%
+       {color: #faff33 ;}
+      45%
+       {color: #ffee33 ;}
+      49%
+       {color: #ffd333 ;}
+      52%
+       {color: #ffb433 ;}
+      56%
+        {color: #ff9533 ;}
+      59%
+       {color: #ff7633;}
+      63%
+       {color: #ff5233 ;}
+      66%
+        {color: #ff3933 ;}
+      70%
+      {color: #ff3346;}
+      74%
+       {color: #ff339e;}
+      78%
+      {color: #ff33f4;}
+      84%
+       {color: #c633ff;}
+      89%
+       {color: #8c33ff;}
+      96%
+       {color: #5e33ff;}
+      100%
+       {color: #333cff;}
+
+    }
+
+    @-webkit-keyframes colorchange8 /* Safari and Chrome - necessary duplicate */
+    {
+
+      0%
+      {color: #3361ff ;}
+      3%
+        {color: #3392ff;}
+      7%
+       {color: #33bdff;}
+      10%
+       {color: #33d6ff ;}
+      14%
+       {color: #33f4ff;}
+      17%
+       {color: #33ffe5 ;}
+      21%
+        {color: #33ff9e ;}
+      24%
+       {color: #33ff5e ;}
+      28%
+       {color: #6aff33 ;}
+      31%
+       {color: #9bff33 ;}
+      35%
+       {color: #c0ff33 ;}
+      38%
+        {color: #dfff33 ;}
+      42%
+       {color: #faff33 ;}
+      45%
+       {color: #ffee33 ;}
+      49%
+       {color: #ffd333 ;}
+      52%
+       {color: #ffb433 ;}
+      56%
+        {color: #ff9533 ;}
+      59%
+       {color: #ff7633;}
+      63%
+       {color: #ff5233 ;}
+      66%
+        {color: #ff3933 ;}
+      70%
+      {color: #ff3346;}
+      74%
+       {color: #ff339e;}
+      78%
+      {color: #ff33f4;}
+      84%
+       {color: #c633ff;}
+      89%
+       {color: #8c33ff;}
+      96%
+       {color: #5e33ff;}
+      100%
+       {color: #333cff;}
+
+    }
+
+
+    #s1 {
+      color:red;
+      animation: colorchange9 5.45s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+
+      -webkit-animation: colorchange9 5.45s; /* Chrome and Safari */
+       -webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes colorchange9
+    {
+      0%
+        {color: #3392ff;}
+      3%
+       {color: #33bdff;}
+      7%
+       {color: #33d6ff ;}
+      10%
+       {color: #33f4ff;}
+      14%
+       {color: #33ffe5 ;}
+      17%
+        {color: #33ff9e ;}
+      21%
+       {color: #33ff5e ;}
+      24%
+       {color: #6aff33 ;}
+      28%
+       {color: #9bff33 ;}
+      31%
+       {color: #c0ff33 ;}
+      35%
+        {color: #dfff33 ;}
+      38%
+       {color: #faff33 ;}
+      42%
+       {color: #ffee33 ;}
+      45%
+       {color: #ffd333 ;}
+      49%
+       {color: #ffb433 ;}
+      52%
+        {color: #ff9533 ;}
+      56%
+       {color: #ff7633;}
+      59%
+       {color: #ff5233 ;}
+      630%
+        {color: #ff3933 ;}
+      66%
+      {color: #ff3346;}
+      70%
+       {color: #ff339e;}
+      74%
+      {color: #ff33f4;}
+      78%
+       {color: #c633ff;}
+      84%
+       {color: #8c33ff;}
+      89%
+       {color: #5e33ff;}
+      96%
+       {color: #333cff;}
+      100%
+      {color: #3361ff ;}
+
+    }
+
+    @-webkit-keyframes colorchange9 /* Safari and Chrome - necessary duplicate */
+    {
+
+      0%
+        {color: #3392ff;}
+      3%
+       {color: #33bdff;}
+      7%
+       {color: #33d6ff ;}
+      10%
+       {color: #33f4ff;}
+      14%
+       {color: #33ffe5 ;}
+      17%
+        {color: #33ff9e ;}
+      21%
+       {color: #33ff5e ;}
+      24%
+       {color: #6aff33 ;}
+      28%
+       {color: #9bff33 ;}
+      31%
+       {color: #c0ff33 ;}
+      35%
+        {color: #dfff33 ;}
+      38%
+       {color: #faff33 ;}
+      42%
+       {color: #ffee33 ;}
+      45%
+       {color: #ffd333 ;}
+      49%
+       {color: #ffb433 ;}
+      52%
+        {color: #ff9533 ;}
+      56%
+       {color: #ff7633;}
+      59%
+       {color: #ff5233 ;}
+      63%
+        {color: #ff3933 ;}
+      66%
+      {color: #ff3346;}
+      70%
+       {color: #ff339e;}
+      74%
+      {color: #ff33f4;}
+      78%
+       {color: #c633ff;}
+      84%
+       {color: #8c33ff;}
+      89%
+       {color: #5e33ff;}
+      96%
+       {color: #333cff;}
+      100%
+      {color: #3361ff ;}
+
+    }
+    #buttonGroup>.row{
+        padding-bottom: 7vh
+    }
+    #buttonGroup span span {
+      
+      animation: colorchange2 5s !important; /* animation-name followed by duration in seconds*/
+      animation-iteration-count: infinite !important;
+         /* you could also use milliseconds (ms) or something like 2.5s */
+
+      -webkit-animation: colorchange2 5s !important; /* Chrome and Safari */
+       -webkit-animation-iteration-count: infinite !important;
+
+    }
+    @keyframes colorchange2
+    {
+      0%
+       {color: #ff339e;}
+      3%
+      {color: #ff33f4;}
+      7%
+       {color: #c633ff;}
+      10%
+       {color: #8c33ff;}
+      14%
+       {color: #5e33ff;}
+      17%
+       {color: #333cff;}
+      21%
+      {color: #3361ff ;}
+      24%
+        {color: #3392ff;}
+      28%
+       {color: #33bdff;}
+      31%
+       {color: #33d6ff ;}
+      35%
+       {color: #33f4ff;}
+      38%
+       {color: #33ffe5 ;}
+      42%
+        {color: #33ff9e ;}
+      45%
+       {color: #33ff5e ;}
+      49%
+       {color: #6aff33 ;}
+      52%
+       {color: #9bff33 ;}
+      56%
+       {color: #c0ff33 ;}
+      59%
+        {color: #dfff33 ;}
+      63%
+       {color: #faff33 ;}
+      66%
+       {color: #ffee33 ;}
+      70%
+       {color: #ffd333 ;}
+      74%
+       {color: #ffb433 ;}
+      78%
+        {color: #ff9533 ;}
+      84%
+       {color: #ff7633;}
+      89%
+       {color: #ff5233 ;}
+      96%
+        {color: #ff3933 ;}
+      100%
+        {color: #ff3346;}
+
+
+
+    }
+
+    @-webkit-keyframes colorchange2 /* Safari and Chrome - necessary duplicate */
+    {
+
+      0%
+       {color: #ff339e;}
+      3%
+      {color: #ff33f4;}
+      7%
+       {color: #c633ff;}
+      10%
+       {color: #8c33ff;}
+      14%
+       {color: #5e33ff;}
+      17%
+       {color: #333cff;}
+      21%
+      {color: #3361ff ;}
+      24%
+        {color: #3392ff;}
+      28%
+       {color: #33bdff;}
+      31%
+       {color: #33d6ff ;}
+      35%
+       {color: #33f4ff;}
+      38%
+       {color: #33ffe5 ;}
+      42%
+        {color: #33ff9e ;}
+      45%
+       {color: #33ff5e ;}
+      49%
+       {color: #6aff33 ;}
+      52%
+       {color: #9bff33 ;}
+      56%
+       {color: #c0ff33 ;}
+      59%
+        {color: #dfff33 ;}
+      63%
+       {color: #faff33 ;}
+      66%
+       {color: #ffee33 ;}
+      70%
+       {color: #ffd333 ;}
+      74%
+       {color: #ffb433 ;}
+      78%
+        {color: #ff9533 ;}
+      84%
+       {color: #ff7633;}
+      89%
+       {color: #ff5233 ;}
+      96%
+        {color: #ff3933 ;}
+      100%
+        {color: #ff3346;};
+
+
+
+
+    }

@@ -1,0 +1,123 @@
+#buttonGroup {
+  background:black;
+  animation: backgroundchange1 45s; /* animation-name followed by duration in seconds*/
+     /* you could also use milliseconds (ms) or something like 2.5s */
+
+  -webkit-animation: backgroundchange1 45s; /* Chrome and Safari */
+   -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes backgroundchange1
+{
+  {background: #ff3346;}
+  3%
+   {background: #ff339e;}
+  7%
+  {background: #ff33f4;}
+  10%
+   {background: #c633ff;}
+  14%
+   {background: #8c33ff;}
+  17%
+   {background: #5e33ff;}
+  21%
+   {background: #333cff;}
+  24%
+  {background: #3361ff ;}
+  28%
+    {background: #3392ff;}
+  31%
+   {background: #33bdff;}
+  35%
+   {background: #33d6ff ;}
+  38%
+   {background: #33f4ff;}
+  42%
+   {background: #33ffe5 ;}
+  45%
+    {background: #33ff9e ;}
+  49%
+   {background: #33ff5e ;}
+  52%
+   {background: #6aff33 ;}
+  56%
+   {background: #9bff33 ;}
+  59%
+   {background: #c0ff33 ;}
+  63%
+    {background: #dfff33 ;}
+  66%
+   {background: #faff33 ;}
+  70%
+   {background: #ffee33 ;}
+  74%
+   {background: #ffd333 ;}
+  78%
+   {background: #ffb433 ;}
+  84%
+    {background: #ff9533 ;}
+  89%
+   {background: #ff7633;}
+  96%
+   {background: #ff5233 ;}
+  100%
+   {background: #ff3933 ;}
+}
+
+@-webkit-keyframes backgroundchange1 /* Safari and Chrome - necessary duplicate */
+{
+  0%
+  {background: #ff3346;}
+  3%
+   {background: #ff339e;}
+  7%
+  {background: #ff33f4;}
+  10%
+   {background: #c633ff;}
+  14%
+   {background: #8c33ff;}
+  17%
+   {background: #5e33ff;}
+  21%
+   {background: #333cff;}
+  24%
+  {background: #3361ff ;}
+  28%
+    {background: #3392ff;}
+  31%
+   {background: #33bdff;}
+  35%
+   {background: #33d6ff ;}
+  38%
+   {background: #33f4ff;}
+  42%
+   {background: #33ffe5 ;}
+  45%
+    {background: #33ff9e ;}
+  49%
+   {background: #33ff5e ;}
+  52%
+   {background: #6aff33 ;}
+  56%
+   {background: #9bff33 ;}
+  59%
+   {background: #c0ff33 ;}
+  63%
+    {background: #dfff33 ;}
+  66%
+   {background: #faff33 ;}
+  70%
+   {background: #ffee33 ;}
+  74%
+   {background: #ffd333 ;}
+  78%
+   {background: #ffb433 ;}
+  84%
+    {background: #ff9533 ;}
+  89%
+   {background: #ff7633;}
+  96%
+   {background: #ff5233 ;}
+  100%
+   {background: #ff3933 ;}
+}

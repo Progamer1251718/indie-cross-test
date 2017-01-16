@@ -1,0 +1,32 @@
+{
+  "name": "animAlike",
+  "description": "my independent creation",
+  "main": "index.html",
+  "keywords": [
+    "animal",
+    "person",
+    "face",
+    "personality"
+  ],
+  "authors": [
+    "Jacob D.E. Silverman"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular": "~1.4.7",
+    "angular-route": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "angular-resource": "^1.5.8",
+    "angular-mocks": "^1.5.8"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "animalike",
+  "version": "1.0.0",
+  "description": "portrait,animal,objective (& subjective) third-party verification, personality, log, name",
+  "main": "index.js",
+  "dependencies": {
+    "npm-git-install": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JaDyErSi",
+  "license": "ISC"
+}
