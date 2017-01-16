@@ -22,7 +22,18 @@ angular.module('animAlikeApp',[])
   $("#newEntry,#addNew").click(function(){
      $('#newEntryForm').modal('toggle');
       });
-
+      function meesk(){
+        $('#previewCaptionL').css({"display":"inline"})
+        $('#previewCaptionA').css({"display":"none"})
+        $('#looksPic').css({"display":"inline"})
+        $('#actsPic').css({"display":"none"})
+      }
+      function showPreviewActsName(){
+        $('#previewCaptionA').css({"display":"inline"})
+        $('#previewCaptionL').css({"display":"none"})
+        $('#looksPic').css({"display":"none"})
+        $('#actsPic').css({"display":"inline"})
+      }
 
      $('#newEntryForm').ready(function(){
        var picSourceArray=$('#subPic').src
@@ -102,6 +113,8 @@ angular.module('animAlikeApp',[])
 
 
           });
+
+
           $('#backBtn').click(function(){
             $('#pixCarousel').css({
               'display':'initial'
@@ -135,13 +148,14 @@ angular.module('animAlikeApp',[])
             if(isLooksActive[2]){
 
               document.getElementById('looksPic').src=$(this).context.currentSrc
+              document.getElementById('previewCaptionL').innerHTML=animal
 
-              document.getElementById('looksAnim').innerHTML=animal
+
             }
             else{
               document.getElementById('actsPic').src=$(this).context.currentSrc
+              document.getElementById('previewCaptionA').innerHTML=animal
 
-              document.getElementById('actsAnim').innerHTML=animal
             }
 
           })

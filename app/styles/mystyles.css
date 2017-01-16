@@ -15,6 +15,9 @@ container:nth-child(3)>.row{align: center;color: red;padding:10px;}
 footer{background-color:#ffAA0A}
 .sub>.carousel-inner{height:165px}
 #pixCarousel>.carousel-inner{width:73%}
+.form-group{margin-bottom:0px}
+.preview{height:165px;width:200px;position:absolute;background-color: aquamarine;left:350px;top:62px}
+#previewCaption{    left: 100px;    position: relative;    top: -10px;}
 /*.glyphicon-chevron-left{position: absolute;bottom:20px;left:88px}*/
 #leftChev{position: absolute;top:342px;left:76px;width: 40px;height:100px}
 /*.glyphicon-chevron-right{position: absolute;bottom:20px;right:88px}*/

@@ -70,27 +70,34 @@
                  <div class="form-group" >
                    <label for="subject" class="col-xs-12 col-sm-2" style="position:relative;top:60px"><span id="nameSpan">{{first}}'s Portrait</span></label>
                    <div class="item" id="subject" >
-                       <span class="tooltipBrowse" style="position:absolute;left:35%;top:150px;display:none"><input type="file"/></span>
+                       <span class="tooltipBrowse" style="position:absolute;left:25.5%;top:150px;display:none"><input type="file"/></span>
 
                        <a href="views/vidTry.html">
-                         <span style="opacity:50%;display:none;position:absolute;left:35%;top:190px" class="tooltipText" onmouseenter="showTip()">Click to take a new picture<br> with your device</span>
-                         <img class="media-object img-thumbnail picTake"  id="subPic"  style="margin-left:34%;width:200px" onmouseenter="showTip()" onmouseleave="hideTip()">
+                         <span style="opacity:50%;display:none;position:absolute;left:27%;top:178px" class="tooltipText" onmouseenter="showTip()">Click to take a new picture<br> with your device</span>
+                         <img class="media-object img-thumbnail picTake"  id="subPic"  style="margin-left:24%;width:200px" onmouseenter="showTip()" onmouseleave="hideTip()">
                        </a>
+                   </div>
+                   <div class="item preview">
+                     <img id="actsPic"></img>
+                     <img id="looksPic"></img>
                    </div>
                  </div>
 
                 <div class="form-group" id="slimButtons">
                   <label for="acts looks" class="col-xs-12 col-sm-2" style="position:relative;top:-20px;"><span id="nameSpan1">{{first}}</span>'s Appearance or Behavior</label>
-                  <div class="btn-group" data-toggle="buttons" style="margin-left:-16%">
-                     <label class="btn btn-success active" id="looks">
-                       <input type="radio" autocomplete="off" checked id="looks" > Looks Like a
+                  <div class="btn-group" data-toggle="buttons" style="margin-left:-35%">
+                     <label class="btn btn-success active" id="looks"  onclick="meesk()">
+                       <input type="radio" autocomplete="off" checked id="looks"> Looks Like a
                      </label>
-                     <label class="btn btn-danger"  id="acts">
-                       <input type="radio" autocomplete="off" > Acts Like a
+                     <label class="btn btn-danger"  id="acts" onclick="showPreviewActsName()">
+                       <input type="radio" autocomplete="off"  > Acts Like a
                      </label>
+                 </div>
+                 <div class="item"><span id="previewCaptionL"></span><span id="previewCaptionA"></span>
                  </div>
                 </div>
                       <!-- <div class="form-inline"> -->
+
                  <div class="form-group" id="backButtonFormGroup"style="display:none">
                    <a id="backBtn">Back to animal classes</a>
                  </div>
