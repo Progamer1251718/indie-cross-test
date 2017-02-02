@@ -1,0 +1,6 @@
+things to accomplish in finishing app:
+1. for entry form - the sub Carousel needs to behave like the parent Carousel. the parent Carousel hides, the sub shows and the JS takes command of the sub.
+
+2. currently working on (active): getting to run on external server
+
+3. UX-related - entry form, animal selected text could be fancier with shading and background picture dependent on animal category 

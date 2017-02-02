@@ -7,21 +7,25 @@
 #personCaption{  left: 155px;}
 #actsCaption{    left: 230px;}
 #actsAnim,#looksAnim{padding-top: 12px;margin: 0px;}
-#actsPic,#looksPic{height:135px;margin: 10px 10px 0px 0px;}
+#previewCaptionA,#previewCaptionL{       right: 140px;    position: absolute;    top: 250px;background-color: #ababab}
+#actsPic,#looksPic{height:158px;}
 .sub{display:none;height: 22px}
 container:nth-child(3)>.row{align: center;color: red;padding:10px;}
 .row>span{align-content: center;color: red;padding:10px;margin-bottom:10px}
 .righty{position:absolute;right:20px}
 footer{background-color:#ffAA0A}
 .sub>.carousel-inner{height:165px}
+#randoCeleb{right: 12px;position: absolute;top: 17px;height: 6%;font-size: 88%;padding-bottom: 1px;box-sizing: border-box;width: 62px;}
+#celebutt1{position: absolute;top: -1px;right: 5px;}
+#celebutt2{position: absolute;top: 11px;right: 6px;}
+#celebutta{color:none !important}
+#timeDiv{width: 200px;height: 20px;bottom: 10px;position: absolute;left: -35px;}
 #pixCarousel>.carousel-inner{width:73%}
+#pixCarousel{top:-15px}
 .form-group{margin-bottom:0px}
 .preview{height:165px;width:200px;position:absolute;background-color: aquamarine;left:350px;top:62px}
-#previewCaption{    left: 100px;    position: relative;    top: -10px;}
-/*.glyphicon-chevron-left{position: absolute;bottom:20px;left:88px}*/
-#leftChev{position: absolute;top:342px;left:76px;width: 40px;height:100px}
-/*.glyphicon-chevron-right{position: absolute;bottom:20px;right:88px}*/
-#rightChev{  height: 100px;    top: 342px !important ;    width: 40px;right:26px}
+#leftChev{position: absolute;top:297px;left:76px;width: 40px;height:100px}
+#rightChev{  height: 100px;    top: 297px !important ;    width: 40px;right:26px}
 .form-group.nth-child(1)>input{font-style: italic;}
 #header{background: black}
 #appTitle>span{font-size:90px}

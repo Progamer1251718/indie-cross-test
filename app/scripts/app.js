@@ -38,14 +38,14 @@ angular.module('animAlikeApp', ['ui.router','ngResource','ngDialog'])
 
             // route for the dishdetail page
             .state('app.entry', {
-                url: 'entries/:id',
+                url: 'entry',
                 views: {
                     'content@': {
                         templateUrl : 'views/entry.html',
                         controller  : 'EntryController'
                    }
                 }
-            })
+            });
 
 
         $urlRouterProvider.otherwise('/');

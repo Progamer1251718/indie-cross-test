@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="animalikeApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head
+         content must come *after* these tags -->
+
+    <title>AnimAlike</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="styles/bootstrap-social.css" rel="stylesheet"> -->
+    <link href="styles/mystyles.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+    <style> .carousel-inner .active.left {
+                left: -25%;
+            }
+            .carousel-inner .active.right {
+                left: 25%;
+            }
+            .carousel-inner .next {
+                left: 25%;
+            }
+            .carousel-inner .prev {
+                left: -25%;
+            }
+    </style>
+</head>
+<body>
+  <div class=container>
+    <div class="row row-content">
+         <div class="col-xs-12" >
+          <div class="carousel" id="myCarousel">
+              <div class="carousel-inner">
+
+                  <div class="item active">
+                      <div class="col-xs-3" >
+                        	<a href="#" >
+                              <img	src="img/rodents.png" class="center-block" />
+      		                  </a>
+
+                          <p class="lead text-center" >Rodents</p>
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <div class="col-xs-3" >
+                        <a href="#" >
+                          <img   src="img/reptiles.png" class="center-block" />
+      		              </a>
+
+                          <p class="lead text-center" >Reptiles</p>
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <div class="col-xs-3" >
+                        <a href="#">
+                          <img src="img/mammals.png" class="center-block" />
+      		              </a>
+
+                          <p class="lead text-center" >Mammals</p>
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <div class="col-xs-3" >
+                        <a href="#">
+                          <img src="img/primates.png" class="center-block" />
+      		              </a>
+
+                          <p class="lead text-center" >Primates</p>
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <div class="col-xs-3" >
+                        <a href="#" >
+                          <img src="img/birds.png" class="center-block" />
+      		              </a>
+
+                          <p class="lead text-center" >Birds</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>
+      </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+$('#myCarousel').carousel({
+     interval: 10000
+ });
+ $('.carousel .item').each(function () {
+     var next = $(this).next();
+     if (!next.length) {
+         next = $(this).siblings(':first');
+     }
+     next.children(':first-child').clone().appendTo($(this));
+
+     for (var i = 0; i < 2; i++) {
+         next = next.next();
+         if (!next.length) {
+             next = $(this).siblings(':first');
+         }
+
+         next.children(':first-child').clone().appendTo($(this));
+     }
+ });
+</script>
+</body>
+</html>
