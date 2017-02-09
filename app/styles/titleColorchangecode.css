@@ -1158,8 +1158,8 @@
     #buttonGroup>.row{
         padding-bottom: 7vh
     }
-    #buttonGroup span span {
-      
+    #previewCaptionA, #previewCaptionL,#buttonGroup span span {
+
       animation: colorchange2 5s !important; /* animation-name followed by duration in seconds*/
       animation-iteration-count: infinite !important;
          /* you could also use milliseconds (ms) or something like 2.5s */
@@ -1172,14 +1172,19 @@
     {
       0%
        {color: #ff339e;}
+       {border-color:#ff339e; }
       3%
       {color: #ff33f4;}
+       {border-color:#ff339e; }
       7%
        {color: #c633ff;}
+        {border-color:#ff339e; }
       10%
        {color: #8c33ff;}
+        {border-color:#ff339e; }
       14%
        {color: #5e33ff;}
+        {border-color:#ff339e; }
       17%
        {color: #333cff;}
       21%
@@ -1233,15 +1238,20 @@
     {
 
       0%
-       {color: #ff339e;}
+       {color: #ff339e;};
+        {border-color:#ff339e; }
       3%
-      {color: #ff33f4;}
+      {color: #ff33f4;};
+       {border-color:#ff339e; }
       7%
-       {color: #c633ff;}
+       {color: #c633ff;};
+        {border-color:#ff339e; }
       10%
-       {color: #8c33ff;}
+       {color: #8c33ff;};
+        {border-color:#ff339e; }
       14%
-       {color: #5e33ff;}
+       {color: #5e33ff;};
+        {border-color:#ff339e; }
       17%
        {color: #333cff;}
       21%

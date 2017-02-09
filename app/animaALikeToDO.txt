@@ -4,3 +4,22 @@ things to accomplish in finishing app:
 2. currently working on (active): getting to run on external server
 
 3. UX-related - entry form, animal selected text could be fancier with shading and background picture dependent on animal category 
+
+4. fix celeb pitures to not warp inside entry form window
+	a) make so random is not same as previous
+b) add five more entries to the celebs database in controllers
+
+5. functionalize the done button to capture all entered data
+
+6. functionalize openFace (future prospect)
+
+7. when user uses camera mode from entry form, save any entered data so that when thet return, they won't have to reeneter the data.
+
+8. make category images way cooler. semi-transparent with stylized lettering, not ASCII, but text images. 
+
+9. get more sub category pictures especially for reptiles
+
+10. initiate "celeb-matcher" mode to also include celebrities
+
+11. include a "description" text input field on the form
+

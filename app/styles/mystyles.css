@@ -7,7 +7,7 @@
 #personCaption{  left: 155px;}
 #actsCaption{    left: 230px;}
 #actsAnim,#looksAnim{padding-top: 12px;margin: 0px;}
-#previewCaptionA,#previewCaptionL{       right: 140px;    position: absolute;    top: 250px;background-color: #ababab}
+#previewCaptionA,#previewCaptionL{right: 119px; position: absolute;top: 236px;background-color: #ababab;border-width: 6px;border-color: cadetblue;border-style: solid;height: 54px;width: 71px;padding: 10px;}
 #actsPic,#looksPic{height:158px;}
 .sub{display:none;height: 22px}
 container:nth-child(3)>.row{align: center;color: red;padding:10px;}
