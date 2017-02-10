@@ -12,7 +12,8 @@ var gulp = require('gulp'),
   changed = require('gulp-changed'),
   rev = require('gulp-rev'),
   browserSync = require('browser-sync'),
-  del = require('del');
+  del = require('del'),
+  ngannotate=require('gulp-ng-annotate');
 
   gulp.task('jshint', function() {
     return gulp.src('app/scripts/**/*.js')
@@ -33,7 +34,7 @@ var gulp = require('gulp'),
     return gulp.src('./app/**/*.html')
       .pipe(usemin({
         css: [minifycss(),rev()],
-        js: [uglify(),rev()]
+        js: [ngannotate(),uglify(),rev()]
       }))
       .pipe(gulp.dest('dist/'));
   });

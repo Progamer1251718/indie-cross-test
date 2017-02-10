@@ -9,7 +9,7 @@
          content must come *after* these tags -->
 
     <title>AnimAlike</title>
-    <link rel="stylesheet" href="styles/main-36086dc78f.css"/>
+    <link rel="stylesheet" href="styles/main-498931721b.css"/>
   </head>
 
 <body style="position:relative" ng-controller="FormController">
@@ -65,7 +65,7 @@
                  <div class="form-group" >
                    <label for="subject" class="col-xs-12 col-sm-2" style="position:relative;top:60px"><span id="nameSpan">{{form.first}}'s Portrait</span></label>
                    <div class="item" id="subject" >
-                       <span class="tooltipBrowse" style="position:absolute;left:25.5%;top:150px;display:none"><input ng-mouseenter="showTip()" type="file"/></span>
+                       <span class="tooltipBrowse" style="position:absolute;left:25.5%;top:150px;display:none"><input ng-mouseenter="showTip()" ng-mouseleave="hideTip()"type="file"/></span>
 
                        <a href="views/vidTry.html">
                          <span style="opacity:50%;display:none;position:absolute;left:27%;top:178px" class="tooltipText" ng-mouseenter="showTip()">Click to take a new picture<br> with your device</span>
@@ -88,7 +88,7 @@
                        <input type="radio" autocomplete="off"  > Acts Like a
                      </label>
                  </div>
-                 <div class="item"><span id="previewCaptionL"></span><span id="previewCaptionA"></span>
+                 <div class="item"><div id="previewCaptionL"></div><div id="previewCaptionA"></div>
                  </div>
                 </div>
                       <!-- <div class="form-inline"> -->
@@ -354,7 +354,7 @@
 
   </footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="scripts/main-cd8fd760ba.js"></script>
+    <script src="scripts/main-3d03577a0f.js"></script>
 
     <!-- <script type="text/javascript">
         (function (global) {

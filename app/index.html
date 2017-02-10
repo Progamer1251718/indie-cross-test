@@ -101,7 +101,7 @@
                        <input type="radio" autocomplete="off"  > Acts Like a
                      </label>
                  </div>
-                 <div class="item"><div id="previewCaptionL"></div><div id="previewCaptionA"></div>
+                 <div class="item"><div id="previewCaptionL" ></div><div id="previewCaptionA" ></div>
                  </div>
                 </div>
                       <!-- <div class="form-inline"> -->
@@ -264,6 +264,15 @@
                                      call</a> us to reserve for more than six guests
                                  </div>
                              </div> -->
+                     <div class="form-group" id="descr" style="padding-bottom: 10px;">
+                       <label for="description" class="col-sm-2 control-label"  style="position:relative;left:-10px;top: -30px;">
+                         <span id="nameSpan3">Enter a short description about {{form.first}} </span>
+                       </label>
+                       <div class="col-xs-5 col-sm-4 has-feedback" style="margin-left:5%">
+                         <input type="text" class="form-control " id="description" ng-model="form.description" style="width:370px"name="description" placeholder="{{form.first}} reminds me of..."/>
+                       </div>
+
+                     </div>
                      <div class="form-group">
                        <div  id="timeDiv"><span id="timestamp" name="timestamp" ></span></div>
                            <div class="col-xs-12 col-sm-5">

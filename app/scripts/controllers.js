@@ -9,6 +9,7 @@
                     $('#newEntryForm').modal('toggle');
                     global.sessionStorage.setItem("next","refreshed");
                       console.log(nextStatus  = global.sessionStorage.getItem("next"));
+                      $scope.form=global.localStorage.getItem("$scope.dryer")
                   }
               }(window));
 
@@ -32,10 +33,8 @@
                   $('#actsPic').css({"display":"inline"});
                 };
 
-
-
-
                $('#newEntryForm').ready(function(){
+                //  if (document.getElementById('previewCaptionL').innerHTML!)
                  $scope.form={
                    first:'',
                    last:'',
@@ -48,15 +47,22 @@
                    looksCaption: '',
                    description:'',};
                    var timestampForm=$scope.form.timestamp;
-                 $('#last').mouseenter(function(){console.log($scope.form);$scope.timestamp=$scope.form.timestamp;console.log($scope.timestamp);});
+                 $('#last').mouseenter(function(){
+                       console.log($scope.form,"copy",$scope.dryer);
+                       $scope.timestamp=$scope.form.timestamp;
+                       console.log($scope.timestamp);
+                 });
                  var  dates=[String(timestampForm.getFullYear()),"-",String(timestampForm.getMonth()+1),"-",
                              String(timestampForm.getDate()),"@",
                              String(timestampForm.getHours()),":",
                              String(timestampForm.getMinutes())];
                  document.getElementById('timestamp').innerHTML=dates.join("");
-                
 
-
+                 (function (global) {
+                   $scope.dryer=$scope.form
+                     global.localStorage.setItem("$scope.dryer","$scope.form");
+                     console.log("changed=",$scope.dryer);
+                 }(window));
 
                  $('.celeb').click(function celebutton(){
                    var celebsFirst=["Donald","Barry","Michio","Elon","Pharrel"];
@@ -72,10 +78,13 @@
                    document.getElementById('subPic').src=celebsPicURL[randNum];
                    var celebsFirsty=celebsFirst[randNum];
                    document.getElementById('first').value=celebsFirsty;
+                   $scope.form.first=celebsFirst[randNum];
                    document.getElementById('last').value=celebsLast[randNum];
+                   $scope.form.last=celebsLast[randNum];
                    document.getElementById('nameSpan').innerHTML=celebsFirsty+"'s Portrait";
                    document.getElementById('nameSpan1').innerHTML=celebsFirsty;
                    document.getElementById('nameSpan2').innerHTML=celebsFirsty;
+                   $scope.form.image=celebsPicURL[randNum];
                  });
 
                  var picSource=$('#subPic').src;
@@ -184,11 +193,16 @@
                       if(isLooksActive[2]){
                         document.getElementById('looksPic').src=$(this).context.currentSrc;
                         document.getElementById('previewCaptionL').innerHTML=animal;
+                        $scope.form.looksCaption=animal
+                          $scope.form.animLooks=source.join("")
                       }
                       else{
                         document.getElementById('actsPic').src=$(this).context.currentSrc;
                         document.getElementById('previewCaptionA').innerHTML=animal;
+                        $scope.form.actsCaption=animal
+                          $scope.form.animActs=source.join("")
                       }
+
                     });
                   $('#acts').click(function(){
                     console.log($(this));
