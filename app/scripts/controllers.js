@@ -1,7 +1,7 @@
 'use strict';
-  var app =angular.module('animAlikeApp',[]);
+  var app =angular.module('animAlikeApp');
 
-        app.controller('FormController',['$scope', function($scope) {
+        app.controller('FormController',['$scope','formFactory', function($scope,formFactory) {
               (function (global) {
                   var nextStatus= global.sessionStorage.getItem("next");
                   console.log(nextStatus);
@@ -9,7 +9,7 @@
                     $('#newEntryForm').modal('toggle');
                     global.sessionStorage.setItem("next","refreshed");
                       console.log(nextStatus  = global.sessionStorage.getItem("next"));
-                      $scope.form=global.localStorage.getItem("$scope.dryer")
+
                   }
               }(window));
 
@@ -35,35 +35,31 @@
 
                $('#newEntryForm').ready(function(){
                 //  if (document.getElementById('previewCaptionL').innerHTML!)
-                 $scope.form={
-                   first:'',
-                   last:'',
-                   image: '',
-                   category: '',
-                   timestamp: new Date(),
-                   animActs:  '',
-                   actsCaption: '',
-                   animLooks:  '',
-                   looksCaption: '',
-                   description:'',};
-                   var timestampForm=$scope.form.timestamp;
-                 $('#last').mouseenter(function(){
-                       console.log($scope.form,"copy",$scope.dryer);
-                       $scope.timestamp=$scope.form.timestamp;
-                       console.log($scope.timestamp);
-                 });
-                 var  dates=[String(timestampForm.getFullYear()),"-",String(timestampForm.getMonth()+1),"-",
-                             String(timestampForm.getDate()),"@",
-                             String(timestampForm.getHours()),":",
-                             String(timestampForm.getMinutes())];
-                 document.getElementById('timestamp').innerHTML=dates.join("");
+                //  $scope.form={
+                //    first:'',
+                //    last:'',
+                //    image: '',
+                //    category: '',
+                //    timestamp: new Date(),
+                //    animActs:  '',
+                //    actsCaption: '',
+                //    animLooks:  '',
+                //    looksCaption: '',
+                //    description:'',};
+                //    var timestampForm=$scope.form.timestamp;
+                //  $('#last').mouseenter(function(){
+                //        console.log($scope.form,"copy",$scope.dryer);
+                //        $scope.timestamp=$scope.form.timestamp;
+                //        console.log($scope.timestamp);
+                //  });
+                //  var  dates=[String(timestampForm.getFullYear()),"-",String(timestampForm.getMonth()+1),"-",
+                //              String(timestampForm.getDate()),"@",
+                //              String(timestampForm.getHours()),":",
+                //              String(timestampForm.getMinutes())];
+                //  document.getElementById('timestamp').innerHTML=dates.join("");
 
-                 (function (global) {
-                   $scope.dryer=$scope.form
-                     global.localStorage.setItem("$scope.dryer","$scope.form");
-                     console.log("changed=",$scope.dryer);
-                 }(window));
 
+                $scope.form=formFactory.getForm()
                  $('.celeb').click(function celebutton(){
                    var celebsFirst=["Donald","Barry","Michio","Elon","Pharrel"];
                    var celebsLast=["Trump","Obama","Kaku","Musk","Williams"];
