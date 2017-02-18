@@ -1,0 +1,12 @@
+cd json-server
+
+json-server --watch db.json
+
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files
+
+
+
+re-certify for food stamps
+sue dh for negligence
+call usps for return receipt
+file dh claim with court

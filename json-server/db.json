@@ -1,0 +1,61 @@
+{
+  "entries": [
+       {
+         "id":0,
+         "name":"Jake",
+         "image": "img/alberto.png",
+         "category": "rodents",
+         "label":"animal",
+         "timestamp":"2/16/2017@7:44",
+         "animActs":  "img/bear.png",
+         "actsCaption":"bear",
+         "animLooks":  "img/pig.png",
+         "looksCaption":"pig",
+         "description":"Almost looks just like a dude.",
+         "comment": "Almost looks just like a dude."
+      },
+      {
+        "id":1,
+         "name":"Dena",
+         "image": "img/alberto.png",
+         "category": "birds",
+         "label":"birdy",
+         "timestamp":"4.99",
+         "animActs":  "img/bear.png",
+         "actsCaption":"bear",
+         "animLooks":  "img/pig.png",
+         "looksCaption":"pig",
+         "description":"Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce",
+         "comment": ""
+      },
+      {
+        "id":2,
+         "name":"Artimus",
+         "image": "img/alberto.png",
+         "category": "carnivores",
+         "label":"carnivorous asshole",
+         "timestamp":"4.99",
+         "animActs":  "img/bear.png",
+         "actsCaption":"bear",
+         "animLooks":  "img/pig.png",
+         "looksCaption":"pig",
+         "description":"A quintessential ConFusion experience, is it a vada or is it a donut?",
+         "comment": ""
+      },
+      {
+        "id":3,
+         "name":"Casco Bay River Man Dousche",
+         "image":"img/alberto.png",
+         "category": "herbivores",
+         "label":"fish cat",
+         "timestamp":"4.99",
+         "animActs":  "img/bear.png",
+         "actsCaption":"bear",
+         "animLooks":  "img/pig.png",
+         "looksCaption":"pig",
+         "description":"A diker crust and spiced with Indian cardamoms",
+         "comment": ""
+      }
+
+  ]
+}

@@ -23,31 +23,12 @@
     <link rel="stylesheet" href="styles/titleColorchangecode.css">
     <link rel="stylesheet" href="styles/backgroundcolors.css">
     <!-- endbuild -->
+    <base href="file:///H:/Jake%20DE%20Silverman/Prog/animAlike/app/index.html">
   </head>
 
 <body style="position:relative" ng-controller="FormController">
 
-    <header class="jumbotron" id="header" style="margin-bottom:0px;padding:0px 0px 0px 0px;background-image:url('img/logoNew.png') !important;background-repeat:no-repeat;">
-      <div class="container-fluid" style="margin:0px;padding:10px 0px 0px 0px;">
-        <div class="row text-center" style="">
 
-
-              <strong  id="appTitle" style="font-size:0px;">
-                <span id="s1">A</span>
-                <span id="s2">n</span>
-                <span id="s3">i</span>
-                <span id="s4">m</span>
-                <span id="s5">A</span>
-                <span id="s6">l</span>
-                <span id="s7">i</span>
-                <span id="s8">k</span>
-                <span id="s9">e</span>
-              </strong>
-
-        </div>
-      </div>
-
-    </header>
        <!--  FORM -->
    <div id="newEntryForm" class="modal fade" role="dialog" style="text-align:center"  >
      <div class="modal-dialog"> <!-- forces user interaction-->
@@ -70,9 +51,7 @@
                      <div class="col-xs-5 col-sm-4 has-feedback" >
                        <input type="text" class="form-control" name="last"id="last" ng-model="form.last"placeholder="Last"/>
                      </div>
-
                        <button ng-click="celebutton" class="celeb"type="button" id="randoCeleb"><span id="celebutt1">Random</span><br/><span id="celebutt2">Celebrity</span></button>
-
                  </div>
 
                  <div class="form-group" >
@@ -80,7 +59,7 @@
                    <div class="item" id="subject" >
                        <span class="tooltipBrowse" style="position:absolute;left:25.5%;top:150px;display:none"><input ng-mouseenter="showTip()" ng-mouseleave="hideTip()"type="file"/></span>
 
-                       <a href="views/vidTry.html">
+                       <a href="#!vidTry">
                          <span style="opacity:50%;display:none;position:absolute;left:27%;top:178px" class="tooltipText" ng-mouseenter="showTip()">Click to take a new picture<br> with your device</span>
                          <img class="media-object img-thumbnail picTake" src="" id="subPic"  style="margin-left:24%;width:200px" ng-mouseenter="showTip()" ng-mouseleave="hideTip()">
                        </a>
@@ -174,7 +153,7 @@
                                     </div>
                                 </div>
 
-                          </div> <!-- main carousel -->
+                          </div> <!-- main carousel end of -->
                           <a class="left carousel-control" id="leftChev" href=".carousel.active" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
                           <a class="right carousel-control" id="rightChev" href=".carousel.active" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
 
@@ -290,278 +269,26 @@
                  </div> <!-- modal-body -->
               </div> <!-- modal-content -->
          </div> <!-- modal-dialog -->
-     </div> <!-- modal -->
+     </div> <!-- FORM modal end-->
 
-     <!-- --------------- -->
+     <!-- NavBar -->
 
-  <nav class="navbar navbar-inverse col-xs-12 navbar-fixed-top" role="navigation" style="position:absolute;top:131px"; >
-       <div class="container" >
-         <button style="position:absolute;left:10px;top:7px"class="btn" id="addNew">Create New Entry</button>
-         <ul class="nav navbar-nav" style="position:absolute;right:0px">
-             <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                     role="button" aria-haspopup="true" aria-expanded="false">
-                      <i class="fa fa-ellipsis-h"></i>
-                     </a>
-                     <ul class="dropdown-menu" style="position:absolute;left:-125px">
-                       <li class="active"><a href="index.html"><span class="fa fa-home"></span>
-                          <span class="righty">  Home</span></a>
-                        </li>
-                       <li><a href="views/vidTry.html"><span class="fa fa-photo">   </span>
-                          <span class="righty">   Snap a Pic</span></a>
-                       </li>
-                       <li><a href="views/stats.html"><span class="fa fa-bar-chart">   </span>
-                          <span class="righty">   Statistics</span></a>
-                       </li>
-                       <li><a href="views/openface.html"><span class="fa fa-check-square-o">   </span>
-                        <span class="righty">     OpenFace</span></a>
-                       </li>
-                       <li role="separator" class="divider"></li>
-                       <li class="dropdown-header"><big>Database</big></span></li>
-                       <li><a id="newEntry"><span class="fa fa-user-plus">   </span>
-                          <span class="righty">   New Entry</span></a>
-                       </li>
-                       <li><a href="views/entries.html"><span class="fa fa-eye"></span>/<span class="fa fa-edit">   </span>
-                          <span class="righty">   View/Edit</span></a>
-                       </li>
-                       <li><a href="views/entries.html"><span class="fa fa-share"></span></span>
-                          <span class="righty">   Share</span></a>
-                       </li>
-                   </ul>
-                </li>
-           </ul>
-       </div>
-   </nav>
+<div ui-view="header"></div>
+<div ui-view="content"></div>
+<div ui-view="footer"></div>
 
-   <!-- bottom nav buttons-->
-<ng-include src="'views/main.html'"></ng-include>
-
-  <footer class="row-footer" style="margin-top:100px;text-align:center">
-    <div class="col-xs-12 btn-group" role="group">
-      <button class="col-xs-offset-4 col-sm-offset-3 col-xs-1">
-
-        <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
-      </button>
-      <div  class="col-xs-offset-1 col-xs-1"  >
-
-          <a href="views/entries.html"   ><button class="col-xs-12"><i class="fa fa-database" aria-hidden="true"></i></button>
-          </a>
-
-      </div>
-      <button  class="col-xs-offset-1 col-xs-1">
-
-          <a href="share.html"><i class="fa fa-share" aria-hidden="true"></i></a>
-      </button>
-    </div>
-
-
-  </footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- build:js scripts/main.js -->
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-
     <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.min.js"></script>
     <script src="..\bower_components\jquery\dist\jquery.min.js"></script>
     <script src="..\bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
     <script src="scripts/app.js"></script>
-    <script src="scripts/services.js"></script>
     <script src="scripts/controllers.js"></script>
+    <script src="scripts/services.js"></script>
+
     <!-- endbuild -->
 
-    <!-- <script type="text/javascript">
-        (function (global) {
-            var nextStatus= global.sessionStorage.getItem("next");
-            console.log(nextStatus)
-            if (nextStatus=='taken'){
-              $('#newEntryForm').modal('toggle');
-              global.sessionStorage.setItem("next","refreshed")
-                console.log(nextStatus  = global.sessionStorage.getItem("next"));
-            }
-        }(window));
-    </script> -->
-
-      <!-- <script>$("#newEntry,#addNew").click(function(){
-         $('#newEntryForm').modal('toggle');
-          });
-      </script> -->
-      <!-- <script>
-         $('#newEntryForm').ready(function(){
-           var picSourceArray=document.getElementById('subPic').src.split("")
-           var picSourceArrayLength=picSourceArray.length
-
-          picSourceCheck=picSourceArray.slice(picSourceArrayLength-4,picSourceArrayLength).join("")
-          // if no picture yet
-           if (picSourceCheck=="null"){
-             $('.tooltipBrowse').css({
-               'display':'inline'
-             });
-             $('#subPic').css({
-               'height':'200px'
-             })
-           };
-           $('#pixCarousel').carousel({
-                interval: 10000
-            });
-            $('.carousel .item').each(function () {
-                var next = $(this).next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
-                }
-                next.children(':first-child').clone().appendTo($(this));
-
-                for (var i = 0; i < 2; i++) {
-                    next = next.next();
-                    if (!next.length) {
-                        next = $(this).siblings(':first');
-                    }
-
-                    next.children(':first-child').clone().appendTo($(this));
-                }
-            });
-            $('.center-block').click(function(){
-                  categorySourceArray=$(this).context.src.split("");
-                  for (i=0;i<categorySourceArray.length;i++){
-                    if (categorySourceArray[i]+categorySourceArray[i+1]+categorySourceArray[i+2]=="img"){
-                        var category=(categorySourceArray.slice(i+4,categorySourceArray.length-4)).join("")
-                        console.log(category)
-                        break
-                    }
-                  }
-                  var element=document.getElementsByClassName(category)
-                  console.log(element)
-                  $(element).css({"display":"inline"})
-
-                  $('#pixCarousel').css({
-                    'display':'none'
-                  });
-
-                  $('#backButtonFormGroup').css({
-                    'display':'inline'
-                  });
-                  $('.sub>.carousel-inner>.item').css({
-                    'display':'inline'
-                  });
-
-
-              });
-              $('#backBtn').click(function(){
-                $('#pixCarousel').css({
-                  'display':'inline'
-                });
-
-                $('#backButtonFormGroup').css({
-                  'display':'none'
-                });
-                $('.sub').css({"display":"none"})
-              })
-              $('.sub img').click(function(){
-                console.log($(this))
-                $('#pixCarousel').css({
-                  'display':'inline'
-                });
-
-                $('#backButtonFormGroup').css({
-                  'display':'none'
-                });
-                $('.sub').css({"display":"none"})
-              }) -->
-
-            <!-- // var firstName  = document.getElementById("first");
-            // var nameSpan  = document.getElementById("nameSpan");
-            // var nameSpan1= document.getElementById("nameSpan1");
-            //   var nameSpan2= document.getElementById("nameSpan2");
-            // // if (firstName.value!=null) {
-            //   nameSpan.innerHTML=firstName.value+"'s Portrait";
-            //   nameSpan1.innerHTML=firstName.value;
-            //   nameSpan2.innerHTML= firstName.value
-            // // }; -->
-            <!-- $('#acts').click(function(){
-              console.log($(this));
-              $('.actsShow').css({
-                    'display':'inline'
-                });
-
-              $('.looksShow').css({
-                  'display':"none"
-                });
-            });
-            $('#looks').click(function(){
-              console.log($(this));
-              $('.looksShow').css({
-                    'display':'inline'
-                });
-
-              $('.actsShow').css({
-                  'display':"none"
-                });
-            }); -->
-
-
-            <!-- $('.moreInfoSwitch').click(function(){
-              console.log($(this));
-              var classname=(this.className.split(" "))[1];
-              console.log(classname);
-              classyEls=document.getElementsByClassName(classname)
-              console.log(classyEls)
-              for (i=0;i<classyEls.length;i++){
-                classes=classyEls[i].className
-                console.log(i,classes.split(" ")[0],classyEls[i],classname)
-                if (classes.split(" ")[0]=='moreInfo'){
-                  $(classyEls[i]).css({
-                    'display':'inline'
-                  });
-                }
-                else if (classes.split(" ")[0]=='moreInfoSwitch'){
-                    $(classyEls[i]).css({
-                      'display':"none"
-                    });
-                };
-              };
-            });
-            $('.less').click(function(){
-              console.log($(this));
-              var lessClass=this.className.split(" ")[1];
-              console.log(lessClass);
-              classfulEls=document.getElementsByClassName(lessClass)
-              console.log(classfulEls)
-              for (i=0;i<classyEls.length;i++){
-                classes=classfulEls[i].className
-                console.log(i,classes.split(" ")[0],classfulEls[i],lessClass)
-                if (classes.split(" ")[0]=='moreInfo'){
-                  $(classfulEls[i]).css({
-                    'display':'none'
-                  });
-                }
-                else if (classes.split(" ")[0]=='moreInfoSwitch'){
-                    $(classfulEls[i]).css({
-                      'display':"inline"
-                    });
-                };
-              };
-            });
-
-
-          });
-     </script>
-     <script>
-       function showTip(){
-         $('.tooltipText').css({
-           "display":"inline"
-         })
-       }
-       function hideTip(){
-         $('.tooltipText').css({
-           "display":"none"
-         })
-       }
-     </script>
-     <script>
-           (function (global) {
-               document.getElementById("subPic").src= global.sessionStorage.getItem("picture");
-           }(window));
-     </script> -->
    </body>
 </html>

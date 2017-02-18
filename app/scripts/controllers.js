@@ -9,6 +9,8 @@
                     $('#newEntryForm').modal('toggle');
                     global.sessionStorage.setItem("next","refreshed");
                       console.log(nextStatus  = global.sessionStorage.getItem("next"));
+                      $("#subPic").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC3hvNNhS0GEymW7VZZnA0Vp5ZQXD5x5Lpy0Fer4WhsrWzKeLv";
+                      console.log("subpic src= ",  $("#subPic"));
 
                   }
               }(window));
@@ -59,7 +61,7 @@
                 //  document.getElementById('timestamp').innerHTML=dates.join("");
 
 
-                $scope.form=formFactory.getForm()
+                $scope.form=formFactory.getForm();
                  $('.celeb').click(function celebutton(){
                    var celebsFirst=["Donald","Barry","Michio","Elon","Pharrel"];
                    var celebsLast=["Trump","Obama","Kaku","Musk","Williams"];
@@ -83,7 +85,7 @@
                    $scope.form.image=celebsPicURL[randNum];
                  });
 
-                 var picSource=$('#subPic').src;
+                 var picSource=$('#subPic')["0"].src;
                  if (picSource===undefined){
                    console.log('it"s not defined',picSource);
                 //  }
@@ -189,14 +191,14 @@
                       if(isLooksActive[2]){
                         document.getElementById('looksPic').src=$(this).context.currentSrc;
                         document.getElementById('previewCaptionL').innerHTML=animal;
-                        $scope.form.looksCaption=animal
-                          $scope.form.animLooks=source.join("")
+                        $scope.form.looksCaption=animal;
+                          $scope.form.animLooks=source.join("");
                       }
                       else{
                         document.getElementById('actsPic').src=$(this).context.currentSrc;
                         document.getElementById('previewCaptionA').innerHTML=animal;
-                        $scope.form.actsCaption=animal
-                          $scope.form.animActs=source.join("")
+                        $scope.form.actsCaption=animal;
+                          $scope.form.animActs=source.join("");
                       }
 
                     });
@@ -283,59 +285,31 @@
                  "display":"none"
                });
              };
-
-
-
     }]);
 
-    app.controller('EntryController',['$scope', function($scope) {
+    app.controller('EntryController',['$scope','$stateParams','entriesFactory',
+      function($scope,$stateParams,entriesFactory) {
+        $scope.entry={};
+        $scope.showEntry = true;
+        $scope.message = "Loading ...";
+        $scope.entry=entriesFactory.getEntries().get({id:parseInt($stateParams.id,10)});
+        if($scope.entry!=undefined){ console.log("suck= ",$scope.entry);
+        // *** Use the following block to get animCaptions from selected animPics to update into the form data
+          if($scope.entry.animLooks!=undefined){
+             var looks=$scope.entry.animLooks.split("");
+             var end=looks.length-4;
+             $scope.entry.looksCaption=looks.slice(4,end).join("")
+             console.log("ffuck= ",look,end);;
+          }
+          if($scope.entry.animLooks!=undefined){
+             var acts=$scope.entry.animActs.split("");
+             var end1=acts.length-4;
+             $scope.entry.actsCaption=acts.slice(4,end1).join("");};
+           }
 
-      var entry={
-          name:'Jake',
-          image: '../img/alberto.png',
-          category: 'rodents',
-          label:'animal',
-          timestamp:'04/09/1987',
-          animActs:  '../img/bear.png',
-          actsCaption: 'bear',
-          animLooks:  '../img/pig.png',
-          looksCaption: 'pig',
-          description:'Almost looks just like a dude.',
-                 comments: [
-                     {
-                         rating:5,
-                         comment:"Imagine all the eatables, living in conFusion!",
-                         author:"John Lemon",
-                         date:"2012-10-16T17:57:28.556094Z"
-                     },
-                     {
-                         rating:4,
-                         comment:"Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-                         author:"Paul McVites",
-                         date:"2014-09-05T17:57:28.556094Z"
-                     },
-                     {
-                         rating:3,
-                         comment:"Eat it, just eat it!",
-                         author:"Michael Jaikishan",
-                         date:"2015-02-13T17:57:28.556094Z"
-                     },
-                     {
-                         rating:4,
-                         comment:"Ultimate, Reaching for the stars!",
-                         author:"Ringo Starry",
-                         date:"2013-12-02T17:57:28.556094Z"
-                     },
-                     {
-                         rating:2,
-                         comment:"It's your birthday, we're gonna party!",
-                         author:"25 Cent",
-                         date:"2011-12-02T17:57:28.556094Z"
-                     }
 
-                 ]
-              };
-              $scope.entry=entry;
+
+
 
           // var captions=['#looksCaption','#personCaption','#actsCaption']
           // var picSet=[]
@@ -384,3 +358,71 @@
         $('button:first-of-type').css({"z-index":"1"});
       };
     }]);
+
+    app.controller('EntriesController',['$scope','entriesFactory', function($scope,entriesFactory) {
+          $scope.tab = 1;
+          $scope.filtText = '';
+          $scope.showEntries = true;
+          $scope.message = "Loading ...";
+          $scope.entries={}
+          $scope.entries=entriesFactory.getEntries().query();
+          $scope.select = function(setTab) {
+              $scope.tab = setTab;
+
+            };
+            $scope.isSelected = function (checkTab) {
+                return ($scope.tab === checkTab);
+            };
+            $scope.select = function(setTab) {
+                $scope.tab = setTab;
+
+                if (setTab === 2){
+                    $scope.filtText = "carnivores";}
+                else if (setTab === 3){
+                    $scope.filtText = "herbivores";}
+                else if (setTab === 4){
+                    $scope.filtText = "birds";}
+                else if (setTab === 5){
+                    $scope.filtText = "rodents";}
+                else if (setTab === 6){
+                    $scope.filtText = "reptiles";}
+                else{
+                    $scope.filtText = "";}
+            };
+
+    }]);
+    app.controller('vidTryController',function(){
+      // Grab elements, create settings, etc.
+      var video = document.getElementById('video');
+      // Get access to the camera!
+      if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+          // Not adding `{ audio: true }` since we only want video now
+          navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+              video.src = window.URL.createObjectURL(stream);
+              video.play();
+          });
+      }
+      // Elements for taking the snapshot
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d');
+      // var video = document.getElementById('video');
+
+      // Trigger photo take
+      document.getElementById("snap").addEventListener("click", function() {
+        context.drawImage(video, 0, 0, 640, 480);
+      });
+      (function (global) {
+        document.getElementById("good").addEventListener("click", function () {
+            global.sessionStorage.setItem("picture",canvas.toDataURL());
+            console.log("a picture was saved in sessionStorage");
+
+        }, false);
+      }(window));
+      (function (global) {
+        document.getElementById("next").addEventListener("click", function () {
+            global.sessionStorage.setItem("next","taken");
+
+        }, false);
+      }(window));
+
+    });

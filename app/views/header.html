@@ -1,21 +1,58 @@
 <header class="jumbotron" id="header" style="margin-bottom:0px;padding:0px 0px 0px 0px;background-image:url('img/logoNew.png') !important;background-repeat:no-repeat;">
+  <div class="container-fluid" style="margin:0px;padding:10px 0px 0px 0px;">
+    <div class="row text-center" style="">
 
-<div class="container-fluid" style="margin:0px;padding:10px 0px 0px 0px;">
-  <div class="row text-center" style="">
 
+          <strong  id="appTitle" style="font-size:0px;">
+            <span id="s1">A</span>
+            <span id="s2">n</span>
+            <span id="s3">i</span>
+            <span id="s4">m</span>
+            <span id="s5">A</span>
+            <span id="s6">l</span>
+            <span id="s7">i</span>
+            <span id="s8">k</span>
+            <span id="s9">e</span>
+          </strong>
 
-        <strong  id="appTitle" style="font-size:0px;">
-          <span id="s1">A</span>
-          <span id="s2">n</span>
-          <span id="s3">i</span>
-          <span id="s4">m</span>
-          <span id="s5">A</span>
-          <span id="s6">l</span>
-          <span id="s7">i</span>
-          <span id="s8">k</span>
-          <span id="s9">e</span>
-        </strong>
-
+    </div>
   </div>
-</div>
+  <nav class="navbar navbar-inverse col-xs-12 navbar-fixed-top" role="navigation" style="position:absolute;top:131px"; >
+       <div class="container" >
+         <button style="position:absolute;left:10px;top:7px"class="btn" id="addNew">Create New Entry</button>
+         <ul class="nav navbar-nav" style="position:absolute;right:0px">
+             <li class="dropdown">
+                    <a ui-sref=nil class="dropdown-toggle" data-toggle="dropdown"
+                     role="button" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-ellipsis-h"></i>
+                     </a>
+                     <ul class="dropdown-menu" style="position:absolute;left:-125px">
+                       <li><a ui-sref="app.main"><span class="fa fa-home"></span>
+                          <span class="righty">  Home</span></a>
+                        </li>
+                       <li><a ui-sref="app.vidTry"><span class="fa fa-photo">   </span>
+                          <span class="righty">   Snap a Pic</span></a>
+                       </li>
+                       <li><a ui-sref="views/stats"><span class="fa fa-bar-chart">   </span>
+                          <span class="righty">   Statistics</span></a>
+                       </li>
+                       <li><a ui-sref="app.openFace"><span class="fa fa-check-square-o">   </span>
+                        <span class="righty">     OpenFace</span></a>
+                       </li>
+                       <li role="separator" class="divider"></li>
+                       <li class="dropdown-header"><big>Database</big></span></li>
+                       <li><a id="newEntry"><span class="fa fa-user-plus">   </span>
+                          <span class="righty">   New Entry</span></a>
+                       </li>
+                       <li><a ui-sref="app.entries"><span class="fa fa-eye"></span>/<span class="fa fa-edit">   </span>
+                          <span class="righty">   View/Edit</span></a>
+                       </li>
+                       <li><a ui-sref="app.entries"><span class="fa fa-share"></span></span>
+                          <span class="righty">   Share</span></a>
+                       </li>
+                   </ul>
+                </li>
+           </ul>
+       </div>
+   </nav>
 </header>

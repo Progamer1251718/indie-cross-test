@@ -1,5 +1,5 @@
 'use strict';
-  var app =angular.module('animAlikeApp');
+  var app =angular.module('animAlikeApp').constant("baseURL","http://localhost:3000/");
 // app.service('formService', function() {
 //   var formInputs = [];
 //
@@ -18,13 +18,8 @@
 //
 // });
 app.service('formFactory',function(){
-
-
-  // var formdeets=[];
-  // var entries=[];
-  //
-
   var form={
+    _id:0,
     first:'',
     last:'',
     image: '',
@@ -46,12 +41,10 @@ app.service('formFactory',function(){
     this.getForm=function(){
       return form;
     };
-    // formfac.getEntries=function(){
-    //   return entries;
-    // };
-    // formfac.getEntry=function(index){
-    //   return entries[index];
-    // };
+  });
 
-
-});
+app.service('entriesFactory',['$resource','baseURL',function($resource,baseURL){
+    this.getEntries=function(){
+      return $resource(baseURL+"entries/:id",null,{'update':{method:'PUT'}});
+    };
+}]);

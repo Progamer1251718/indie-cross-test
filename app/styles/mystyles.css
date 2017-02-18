@@ -2,7 +2,7 @@
 #slimButtons>.btn-group{top:15px}
 .entries:hover{text-decoration: none}
 #backButtonFormGroup{margin:0px}
-#personCaption,#actsCaption,#looksCaption{position: relative;top: 77px;}
+#personCaption,#actsCaption,#looksCaption{position: relative;top: 77px;width:110px}
 #looksCaption{left:75px}
 #personCaption{  left: 155px;}
 #actsCaption{    left: 230px;}
